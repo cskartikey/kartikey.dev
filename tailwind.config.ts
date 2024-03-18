@@ -9,12 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "background-black": "#0F0F0F",
-        "accent-green": "#008170",
+        "background-black": "#000000",
+        "accent-green": "#7752FE",
+        "nav-black": "#262626",
       },
       fontFamily: {
         playfair: ["var(--font-playfair)"],
         poppins: ["var(--font-poppins)"],
+        inter: ["var(--font-inter)"],
+        pricedown: ["var(--font-pricedown)"],
       },
     },
   },

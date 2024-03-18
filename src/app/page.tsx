@@ -1,28 +1,17 @@
 "use client";
 import Head from "next/head";
 import Link from "next/link";
-import { Icon } from "@iconify/react";
-import Typewriter from "typewriter-effect";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-12 lg:p-24 bg-background-black">
+    <main className="flex overflow min-h-screen flex-col items-center justify-between p-12 lg:p-24 lg:px-40 dark:bg-background-black dark:text-white">
       <div className="self-start">
-        <h1 className="font-bold lg:text-7xl xl:text-8xl font-playfair text-3xl">
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .changeDelay(100)
-                .typeString("Kartikey Singh Chauhan")
-                .typeString('<span style="color: #008170;">.</span>')
-                .callFunction((state) => {
-                  state.elements.cursor.remove();
-                })
-                .start();
-            }}
-          />
+        <h1 className="font-bold lg:text-7xl xl:text-8xl font-pricedown text-3xl">
+          Kartikey S. Chauhan{" "}
+          <span className="text-5xl text-accent-green">[he/him]</span>
         </h1>
-        <p className="lg:text-lg font-poppins my-6 lg:w-4/6 text-base">
+        <p className="lg:text-2xl font-inter my-6 lg:mt-16 lg:w-4/6 text-base">
           Hey there! 👋🏼 Welcome to my little corner of the Internet! I'm
           Kartikey, currently a senior at{" "}
           <a
@@ -37,7 +26,7 @@ export default function Home() {
           <span className="underline decoration-accent-green decoration-4 hover:no-underline hover:text-accent-green">
             YLAC
           </span>
-          ) as well . I have prior experience in{" "}
+          ) as well. I have prior experience in{" "}
           <a
             href="https://en.wikipedia.org/wiki/Open-source_intelligence"
             className="underline decoration-accent-green decoration-4 hover:no-underline hover:text-accent-green"
@@ -60,31 +49,10 @@ export default function Home() {
             Code Forces
           </a>
         </p>
-        <div className="flex flex-row gap-x-5 text-4xl">
-          <Link
-            href={"https://github.com/cskartikey"}
-            className="hover:text-accent-green"
-          >
-            <Icon icon="mdi:github" />
-          </Link>
-          <Link
-            href={"https://github.com/cskartikey"}
-            className="hover:text-accent-green"
-          >
-            <Icon icon="mdi:instagram" />
-          </Link>
-          <Link
-            href={"https://github.com/cskartikey"}
-            className="hover:text-accent-green"
-          >
-            <Icon icon="mdi:linkedin" />
-          </Link>
-          <Link
-            href={"https://github.com/cskartikey"}
-            className="hover:text-accent-green"
-          >
-            <Icon icon="mdi:slack" />
-          </Link>
+        <div>PS: Some facts about me: As of</div>
+        <div className="flex flex-row p-3 font-semibold text-md bg-accent-green w-28 font-inter rounded-lg items-center justify-center text-md border-zinc-700 border hover:scale-105 mt-12">
+          Contact
+          <Icon icon="maki:arrow" className="mx-1" />
         </div>
       </div>
     </main>
